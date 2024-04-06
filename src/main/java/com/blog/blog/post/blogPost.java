@@ -1,4 +1,4 @@
-package com.blog.blog;
+package com.blog.blog.post;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;

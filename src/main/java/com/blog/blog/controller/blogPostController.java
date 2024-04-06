@@ -1,5 +1,6 @@
-package com.blog.blog;
+package com.blog.blog.controller;
 
+import com.blog.blog.post.blogPost;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -13,7 +14,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class blogPostController {
 
-    private final blogPostRepository blogPostRepository;
+    private final com.blog.blog.repository.blogPostRepository blogPostRepository;
 
     @GetMapping("/new")
     public String showblogPostForm(blogPost blogPost) {

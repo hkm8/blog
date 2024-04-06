@@ -1,5 +1,6 @@
-package com.blog.blog;
+package com.blog.blog.repository;
 
+import com.blog.blog.post.blogPost;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface blogPostRepository extends JpaRepository<blogPost, Long> {
