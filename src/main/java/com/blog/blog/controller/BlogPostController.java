@@ -24,14 +24,15 @@ public class BlogPostController {
     }
 
     // Create a new blog post
-    @PostMapping
+    @PostMapping("/add") // The additional path is specified here
     public ResponseEntity<blogPost> createPost(@Valid @RequestBody blogPost post) {
         blogPost savedPost = postRepository.save(post);
         return ResponseEntity.status(HttpStatus.CREATED).body(savedPost);
     }
 
+
     // Retrieve all blog posts
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<List<blogPost>> getAllPosts() {
         List<blogPost> posts = postRepository.findAll();
         return ResponseEntity.ok(posts);
