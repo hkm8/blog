@@ -3,7 +3,7 @@ target/
 !.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
-
+!env.properties
 ### STS ###
 .apt_generated
 .classpath
@@ -19,6 +19,7 @@ target/
 *.iml
 *.ipr
 .env.properties
+env.properties
 
 ### NetBeans ###
 /nbproject/private/
@@ -32,4 +33,3 @@ build/
 
 ### VS Code ###
 .vscode/
-env.properties
